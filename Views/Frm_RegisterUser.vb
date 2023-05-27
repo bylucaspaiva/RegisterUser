@@ -11,8 +11,8 @@
     Private Sub RegisterUserBtm_Click(sender As Object, e As EventArgs) Handles Btm_RegisterUser.Click
         Dim Nome = Txt_Nome.Text
         Dim CPF = Txt_CPF.Text
-        Dim Nascimento = Txt_Nascimento.Text
-        Dim Sexo = Txt_Sexo.Text
+        Dim Nascimento = Dat_Nascimento.Value
+        Dim Sexo = Cmb_Sex.SelectedItem
         Dim Endereco = Txt_Endereço.Text
         Dim Telefone = Txt_Telefone.Text
         Dim Email = Txt_Email.Text

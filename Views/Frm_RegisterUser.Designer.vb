@@ -32,11 +32,11 @@ Partial Class Frm_RegisterUser
         Lbl_Email = New Label()
         Txt_Email = New TextBox()
         Lbl_Sexo = New Label()
-        Txt_Sexo = New TextBox()
         Lbl_Endereco = New Label()
         Txt_Endereço = New TextBox()
         Lbl_Nascimento = New Label()
-        Txt_Nascimento = New TextBox()
+        Dat_Nascimento = New DateTimePicker()
+        Cmb_Sex = New ComboBox()
         SuspendLayout()
         ' 
         ' Btm_RegisterUser
@@ -121,13 +121,6 @@ Partial Class Frm_RegisterUser
         Lbl_Sexo.TabIndex = 9
         Lbl_Sexo.Text = "Sexo"
         ' 
-        ' Txt_Sexo
-        ' 
-        Txt_Sexo.Location = New Point(43, 283)
-        Txt_Sexo.Name = "Txt_Sexo"
-        Txt_Sexo.Size = New Size(396, 27)
-        Txt_Sexo.TabIndex = 10
-        ' 
         ' Lbl_Endereco
         ' 
         Lbl_Endereco.AutoSize = True
@@ -153,23 +146,33 @@ Partial Class Frm_RegisterUser
         Lbl_Nascimento.TabIndex = 13
         Lbl_Nascimento.Text = "Data de Nascimento"
         ' 
-        ' Txt_Nascimento
+        ' Dat_Nascimento
         ' 
-        Txt_Nascimento.Location = New Point(43, 389)
-        Txt_Nascimento.Name = "Txt_Nascimento"
-        Txt_Nascimento.Size = New Size(396, 27)
-        Txt_Nascimento.TabIndex = 14
+        Dat_Nascimento.Location = New Point(43, 389)
+        Dat_Nascimento.Name = "Dat_Nascimento"
+        Dat_Nascimento.Size = New Size(250, 27)
+        Dat_Nascimento.TabIndex = 14
+        ' 
+        ' Cmb_Sex
+        ' 
+        Cmb_Sex.DropDownStyle = ComboBoxStyle.DropDownList
+        Cmb_Sex.FormattingEnabled = True
+        Cmb_Sex.Items.AddRange(New Object() {"Masculino", "Feminino"})
+        Cmb_Sex.Location = New Point(40, 287)
+        Cmb_Sex.Name = "Cmb_Sex"
+        Cmb_Sex.Size = New Size(174, 28)
+        Cmb_Sex.TabIndex = 15
         ' 
         ' Frm_RegisterUser
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
-        Controls.Add(Txt_Nascimento)
+        Controls.Add(Cmb_Sex)
+        Controls.Add(Dat_Nascimento)
         Controls.Add(Lbl_Nascimento)
         Controls.Add(Txt_Endereço)
         Controls.Add(Lbl_Endereco)
-        Controls.Add(Txt_Sexo)
         Controls.Add(Lbl_Sexo)
         Controls.Add(Txt_Email)
         Controls.Add(Lbl_Email)
@@ -196,9 +199,9 @@ Partial Class Frm_RegisterUser
     Friend WithEvents Lbl_Email As Label
     Friend WithEvents Txt_Email As TextBox
     Friend WithEvents Lbl_Sexo As Label
-    Friend WithEvents Txt_Sexo As TextBox
     Friend WithEvents Lbl_Endereco As Label
     Friend WithEvents Txt_Endereço As TextBox
     Friend WithEvents Lbl_Nascimento As Label
-    Friend WithEvents Txt_Nascimento As TextBox
+    Friend WithEvents Dat_Nascimento As DateTimePicker
+    Friend WithEvents Cmb_Sex As ComboBox
 End Class
