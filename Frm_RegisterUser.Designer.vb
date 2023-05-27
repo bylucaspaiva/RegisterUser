@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class RegisterUser
+Partial Class Frm_RegisterUser
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -160,9 +160,9 @@ Partial Class RegisterUser
         Txt_Nascimento.Size = New Size(396, 27)
         Txt_Nascimento.TabIndex = 14
         ' 
-        ' RegisterUser
+        ' Frm_RegisterUser
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
         Controls.Add(Txt_Nascimento)
@@ -180,9 +180,8 @@ Partial Class RegisterUser
         Controls.Add(Txt_Nome)
         Controls.Add(Lbl_Nome)
         Controls.Add(Btm_RegisterUser)
-        Name = "RegisterUser"
+        Name = "Frm_RegisterUser"
         Text = "Cadastrar usuário"
-        WindowState = FormWindowState.Maximized
         ResumeLayout(False)
         PerformLayout()
     End Sub

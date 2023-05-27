@@ -1,4 +1,4 @@
-﻿Public Class RegisterUser
+﻿Public Class Frm_RegisterUser
     Public Sub New()
 
         ' This call is required by the designer.
