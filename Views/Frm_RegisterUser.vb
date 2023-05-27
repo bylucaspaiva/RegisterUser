@@ -15,6 +15,13 @@
         Dim Sexo = Txt_Sexo.Text
         Dim Endereco = Txt_Endereço.Text
         Dim Telefone = Txt_Telefone.Text
+        Dim Email = Txt_Email.Text
+
+        Dim databaseManager As New DatabaseManager()
+
+        databaseManager.InserirUsuario(CPF, Nome, Telefone, Email, Sexo, Endereco, Nascimento)
+
+        MessageBox.Show("Usuário inserido com sucesso!")
 
     End Sub
 End Class
