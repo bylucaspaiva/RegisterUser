@@ -1,10 +1,17 @@
 ﻿Public Class Frm_ListaUsuarios
-    Public Sub New()
+    Private Sub Frm_ListaUsuarios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        CarregarUsuarios()
+    End Sub
 
-        ' This call is required by the designer.
-        InitializeComponent()
+    Private Sub CarregarUsuarios()
+        Dim databaseManager As New DatabaseManager()
 
-        ' Add any initialization after the InitializeComponent() call.
+        Try
+            Dim usuarios As List(Of Usuario) = databaseManager.ObterUsuarios()
 
+            DataGridView1.DataSource = usuarios
+        Catch ex As Exception
+            MessageBox.Show("Erro ao obter usuários: " & ex.Message)
+        End Try
     End Sub
 End Class
