@@ -1,7 +1,6 @@
 # RegisterUser
 
-![image](https://github.com/bylucaspaiva/RegisterUser/assets/58491622/c934cf9a-a0bf-465e-af46-9cb9bc24cf5b)
-![image](https://github.com/bylucaspaiva/RegisterUser/assets/58491622/2d04ed72-8ee6-4bf1-908f-c6a74dd088d9)
+![image](https://github.com/bylucaspaiva/RegisterUser/assets/58491622/ead4804f-433a-48cc-9e47-480b96a825cd)
 
 
 Este é um projeto de entrevista desenvolvido por mim para o J. Armando Batista. O projeto consiste em um aplicativo Windows Forms para cadastro de usuários.
@@ -9,12 +8,12 @@ Configuração do Banco de Dados
 
 Antes de executar o projeto, certifique-se de ter criado um banco de dados no SQL Server e que ele esteja conectado à seguinte connection string:
 
-``
+```
 Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=RegisterUser;Integrated Security=True;
-``
+```
 Após criar o banco de dados, execute o seguinte comando SQL para criar a tabela necessária para o projeto:
 
-``
+```
 USE RegisterUser;
 
 CREATE TABLE dbo.[User]
@@ -27,7 +26,7 @@ CREATE TABLE dbo.[User]
     [Endereço] NCHAR(70) NULL, 
     [DataNascimento] DATE NULL
 );
-``
+```
 Certifique-se de executar o comando acima no contexto do banco de dados RegisterUser.
 Executando o Projeto
 
